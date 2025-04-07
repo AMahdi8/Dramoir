@@ -16,4 +16,5 @@ urlpatterns = [
     path('search/', SearchView.as_view(), name='search'),
     path('weeklist/', WeeklyScheduleListView.as_view(), name='weekly-schedule-list'),
     path('shortdescription/<int:id>/', ShortDescriptionView.as_view(), name='short-description'),
+    path('home/', HomePageView.as_view(), name='home'),
 ] + router.urls
